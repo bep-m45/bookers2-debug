@@ -1,6 +1,7 @@
+
 <h2>User info</h2>
 
-<%= form_with model:@user, local: true do |f| %>
+<%= form_with model: @user, local: true do |f| %>
 
 	<!-- エラーメッセージ表示-->
 	<% if @user.errors.any? %>
@@ -16,8 +17,8 @@
 	<!-- エラーメッセージ表示-->
 
 	<div class="field">
-		<%= f.label :title %>
-		<%= f.text_field :title, class: "name" %>
+		<%= f.label :name %>
+		<%= f.text_field :name, class: "name" %>
 	</div>
 
 	<div class="field">
